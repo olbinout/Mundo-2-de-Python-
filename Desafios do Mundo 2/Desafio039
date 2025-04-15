@@ -1,0 +1,26 @@
+import datetime
+
+ano_de_nascimento = int(input('Em que ano você nasceu? '))
+idade_dezoito = datetime.date.today().year - ano_de_nascimento
+
+
+if datetime.date.today().year - ano_de_nascimento == 18:
+    print(f'Está na hora de servir ao Exército você possui ou irá fazer {idade_dezoito} anos de idade neste ano.')
+
+elif idade_dezoito > 18:
+    passou = idade_dezoito - 18
+    print(f'Prezado colega, pague o dobro da sua idade, que é {idade_dezoito}, de flexões.\nVai pagar: {idade_dezoito * 2} FLEXÕES!!!')
+
+    if idade_dezoito - 18 == 1:
+         print(f'Você tem {passou} ano de atrazo! ') 
+    elif idade_dezoito - 18 > 1:
+         print(f'Você tem {passou} anos de atrazo!') 
+   
+
+elif idade_dezoito < 18:
+    falta = 18 - idade_dezoito
+    print('Seu dia irá chegar, caro jovem!')
+    if 18 - idade_dezoito == 1:
+        print(f'Falta {falta} ano para ser apto a servir.')
+    elif idade_dezoito < 18:
+         print(f'Faltam {falta} anos para ser apto a servir.')

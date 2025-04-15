@@ -1,0 +1,33 @@
+valor = float(input('QUAL O VALOR DO PRODUTO? R$'))
+print('''QUAL A FORMA DE PAGAMENTO?
+[1] à vista dinheiro/cheque
+[2] à vista cartão
+[3] 2x no cartão    
+[4] 3x ou mais no cartão''')
+opcao = int(input('QUAL A OPÇÃO? '))
+
+if opcao == 1:
+    desconto_de_10 = valor * 0.9
+
+    print('Você terá um desconto de 10% por ter escolhido à vista no dinheiro/cheque!!!')
+    print(f'O valor era de R${valor:.2f} e ficará por R${desconto_de_10:.2f}')
+
+elif opcao == 2:
+    desconto_de_5 = valor * 0.95
+
+    print('Você terá um desconto de 5% por ter escolhido à vista no cartão!!!')
+    print(f'O valor era de R${valor:.2f} e ficará por R${desconto_de_5:.2f}')        
+
+elif opcao == 3:
+    print(f'Você irá pagar R${valor:.2f} por ter escolhido 2x no cartão.')
+
+elif opcao == 4:
+    quantas_vezes = int(input('Será em quantas vezes? '))
+    juros_de_20 = valor * 1.2
+    mensal = juros_de_20 / quantas_vezes
+
+    print('''Você irá ter um JUROS de 20% no valor final da compra por ter escolhido 3x ou mais no cartão!''')
+    print(f'O valor era de R${valor:.2f} e com JUROS ficará por R${juros_de_20:.2f} e o valor será de {quantas_vezes}x de R${mensal:.2f}.') 
+
+else:
+    print('\033[4;31;40mOpcão inválida de pagamento, tente novamente.\033[m')

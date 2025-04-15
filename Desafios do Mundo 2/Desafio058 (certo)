@@ -1,0 +1,54 @@
+import random
+import time
+tentativa = 1 
+tentativas_feitas = []
+
+roleta = random.randint (0,10)
+print("Pensei em um número do 0 até o 10.")
+print(f'{roleta}')
+numero =int(input("Tente adivinhar um número que eu estou pensando, sendo 0 até o 10: "))
+print(" ")
+tentativas_feitas.append(numero) #COISA NOVA QUE APRENDI PELO CHAT, ADICIONAR COISAS EM LISTA.
+
+print("Eita...")
+time.sleep(1)
+
+if numero > roleta:
+    print('O número da roleta é menor.')
+time.sleep(1)   
+if numero < roleta: 
+    print('O número da roleta é maior.')
+time.sleep(1)    
+
+
+while numero != roleta:
+    print('Você não conseguiu acertar o número que a roleta escolheu, mas pode tentar até conseguir acertar.')
+    numero = int(input('Escolha outro número: '))
+    tentativas_feitas.append(numero) #ARMAZENA AS TENTATIVAS QUE FIZ ATÉ ACERTAR A RESPOSTA.
+
+    if numero < roleta:
+        print('O número da roleta é maior.') 
+    if numero > roleta:
+        print('O número da roleta é menor.')   
+
+    time.sleep(1)
+    tentativa = tentativa + 1 
+    
+
+if tentativa == 1:
+    print('Parabéns, você conseguiu acertar de primeira.')
+
+elif tentativa == 2: 
+    print('Parabéns, de primeira não foi, mas de segunda deu certo.')
+
+elif tentativa == 3:
+    print('Boa, parabéns por ter acertado, foi bem!') 
+
+elif tentativa <= 4:
+    print('Que isso, cara. Quase que não acerta.')
+
+else:
+    time.sleep(2)
+    print('Agora você conseguiu acertar, mas demorou que só.')
+    print(f'Você precisou de {tentativa} tentativas para conseguir acertar o número da roleta.')
+    print(f'Os números que você tentou foram: {tentativas_feitas}')

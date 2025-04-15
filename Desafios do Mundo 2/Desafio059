@@ -1,0 +1,57 @@
+import time
+
+termo1 = float(input('DIGITE UM VALOR: '))
+termo2 = float(input('DIGITE UM SEGUNDO VALOR: '))
+opcao = 0
+while opcao != 7:
+    print('''Você deseja qual opção?
+    [1] ADIÇÃO
+    [2] SUBTRAÇÃO
+    [3] MULTIPLICAÇÃO
+    [4] DIVISÃO
+    [5] SABER QUAL É O MAIOR E QUAL O MENOR
+    [6] ESCOLHER NOVOS NÚMEROS
+    [7] SAIR DO PROGRAMA''')
+    modo = int(input('Digite qual você desejar: '))
+
+    if modo == 1:
+        adicao = termo1 + termo2
+        print(f'{termo1:.1f} + {termo2:.1f} = {adicao:.1f}')
+
+    elif modo == 2:
+        sub = termo1 - termo2
+        print(f'{termo1} - {termo2} = {sub}')
+
+    elif modo == 3:
+        multi = termo1 * termo2
+        print(f'{termo1} * {termo2} = {multi}')
+
+    elif modo == 4:
+        divisao = termo1 / termo2 
+        print(f'{termo1} / {termo2} = {divisao}')
+    
+    elif modo == 5:
+        if termo1 > termo2:
+            print(f'O {termo1} é maior.')
+
+        elif termo1 < termo2:
+            print(f'O {termo2} é maior.')
+        else:
+            print('Os dois valores são iguais.')
+
+    elif modo == 6:
+        termo1 = float(input('DIGITE UM VALOR: '))
+        termo2 = float(input('DIGITE UM SEGUNDO VALOR: '))
+
+    elif modo == 7:
+        print('Volte sempre que necessitar.')
+        time.sleep(2)
+        print('Desligando')
+        time.sleep(2)
+        print('...')
+        time.sleep(1)
+        print('Desligado.')
+        break
+
+    else:
+        print('Opção inválida, tente novamente, por favor.')

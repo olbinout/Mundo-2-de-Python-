@@ -1,0 +1,13 @@
+casa_valor = float(input('Quanto custa a casa? R$'))
+salario = float(input('Quanto você ganha? R$'))
+anos = int(input('Em quantos anos você irá pagar a casa? '))
+
+meses = (anos * 12)
+valor_casa_por_mes = (casa_valor / meses)
+trinta_por_cento_do_salario = (salario * 0.3)
+
+if valor_casa_por_mes >= trinta_por_cento_do_salario:
+    print('Não poderemos prosseguir com a compra. A prestação mensal excedeu 30/100 de quanto você ganha, pelas circunstâncias da nossa empresa, o empréstimo será negado.')
+else:
+    print('Parabéns pela sua nova aquisição!')
+    print(f'Você irá comprar uma casa de R${casa_valor:.2f} em {anos} anos e o valor mensal que será pagor é de R${valor_casa_por_mes:.2f}.')

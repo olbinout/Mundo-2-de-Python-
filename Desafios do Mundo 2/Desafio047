@@ -1,0 +1,12 @@
+#NÚMEROS PARES ENTRE 1 E 50:
+for c in range(2, 51, 2):
+    print(c , end=' ')
+
+#TERIA COMO FAZER DESSA FORMA:
+
+for c in range (2, 51,):
+    if c % 2 == 0:
+        print(c, end=' ')
+
+print('\nO programa acabou!')
+print('Teste')

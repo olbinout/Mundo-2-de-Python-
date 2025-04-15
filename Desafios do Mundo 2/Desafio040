@@ -1,0 +1,16 @@
+nota1 = float(input('QUANTO VOCÊ TIROU NA PRIMEIRA NOTA? '))
+nota2 = float(input('QUANDO VOCÊ TIROU NA SEGUNDA NOTA? '))
+
+media = (nota1 + nota2) / 2
+print('='*40)
+
+if media < 5:
+    print('REPROVADO')
+
+elif 5 <= media <= 6.99:
+    print('RECUPERAÇÃO')
+
+elif media >= 7:
+    print('APROVADO')
+
+print(f'Sua média foi de {media:.1f}')

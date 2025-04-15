@@ -1,0 +1,58 @@
+import random
+
+
+print('''Qual modo você deseja para a formatação? 
+[1] Letras
+[2] Números
+[3] Ambos''')
+opcao = int(input('Digite o modo que você deseja: '))
+
+if opcao == 1:
+    print('Você escolheu o modo de formatação "Letras".')
+    texto_usuario = str(input('DIGITE QUALQUER COISA: ')).upper() 
+    juntar_tudo = texto_usuario.replace(' ','')
+    caracteres = list(juntar_tudo)
+
+    random.shuffle(caracteres)
+
+    caracteres_juntos = ''.join(caracteres)
+
+
+    inicio_hífen = [caracteres_juntos[c:c+5] for c in range(0, len(caracteres_juntos), 5)]
+    final_hífen = '-'.join(inicio_hífen)
+
+    print(f'{final_hífen}')
+
+elif opcao == 2:
+    print('Você escolheu o modo de formatação "Números".')
+    numero_usuario = str(input('DIGITE UM NÚMERO: '))
+    if numero_usuario not in [0,1,2,3,4,5,6,8,9]:
+        print('teste')
+    junta_numero = numero_usuario.replace(' ','')
+    racionais = list(junta_numero)
+
+    random.shuffle(racionais)
+
+    numeros = ''.join(racionais)
+    
+
+    numero_inicio_hifen = [numeros[c:c+5] for c in range (0, len(numeros), 5)]
+    numero_final_hifen = '-'.join(numero_inicio_hifen)
+
+    print(numero_final_hifen)
+    
+elif opcao == 3:
+    print('Você escolheu o modo "Ambos".')
+    ambos = str(input('DIGITE NÚMEROS E LETRAS: ')).upper()
+    juntar_ambos = ambos.replace(' ','')
+    ambos_independente = list(juntar_ambos)
+    
+    random.shuffle(ambos_independente)
+
+    ambos_random = ''.join(ambos_independente)
+
+    ambos_hifen = [ambos[c:c+5] for c in range (0, len(ambos), 5)]
+    ambos_hifen_final = '-'.join(ambos_hifen)
+
+    print(ambos_hifen_final)
+

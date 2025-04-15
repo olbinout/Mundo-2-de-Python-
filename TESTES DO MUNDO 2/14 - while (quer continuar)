@@ -1,0 +1,5 @@
+resposta = 'SIM' 
+while resposta == 'SIM':
+    numero = int(input('Digite um valor, meu amigo: '))
+    resposta = str(input('Quer continuar? ')).strip().upper()
+print("FIM")

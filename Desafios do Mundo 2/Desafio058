@@ -1,0 +1,25 @@
+import random
+
+
+roleta = random.randint (0,5)
+print("Pensei em um número do 0 até o 5.")
+print(f'{roleta}')
+numero =int(input("Tente adivinhar um número que eu estou pensando, sendo 0 até o 5: "))
+
+print(" ")
+print("Eita...")
+
+if numero != roleta:
+    print('Você não conseguiu acertar o número que a roleta escolheu.')
+    while numero != roleta:
+        outro_numero = int(input(('Escolha outro número até ser igual o que a roleta escolheu: ')))
+        
+    if outro_numero == roleta:
+        print('Dessa vez você acertou, parabéns!')
+
+
+print(" ")
+print(f'A roleta escolheu esse número: < {roleta} >')
+print(f'Você escolheu esse número: {numero}!')
+
+

@@ -1,0 +1,12 @@
+termo1 = int(input('Digite um valor inteiro: '))
+termo2 = int(input('Digite um outro valor inteiro, podendo ser o mesmo ou não: '))
+print("="*70)
+
+if termo1 > termo2:
+    print(f'O PRIMEIRO valor é maior, que é o número {termo1} é maior que o {termo2}.\nVeja: {termo1} > {termo2}')
+elif termo2 > termo1:
+    print(f'O SEGUNDO valor é maior, que é o número {termo2} é maior que o {termo1}.\nVeja: {termo2} > {termo1}')
+
+elif termo1/termo2 == 1:
+    print(f'Os termos são iguais.\nVeja: {termo1} / {termo2} = {termo1/termo2:.0f}. Isso prova que eles são iguais.')
+    

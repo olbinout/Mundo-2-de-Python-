@@ -1,0 +1,15 @@
+n = 1
+par = 0
+impar = 0
+while n != 0:
+    n = int(input('Digite um valor: '))
+    if n % 2 == 0:
+        print('Este número é PAR.')
+        par = par + 1
+    else:
+        print('Este número é ÍMPAR.')
+        impar = impar + 1
+
+print('Apertando "0" desliga o programa.')
+print(f'Ao todo teve {par - 1} números PARES!!')
+print(f'Ao todo teve {impar} números ÍMPARES!')

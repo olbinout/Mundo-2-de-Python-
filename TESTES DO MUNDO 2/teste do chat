@@ -1,0 +1,4 @@
+texto = str(input('DIGITE UM TEXTO: '))
+partes = [texto[c:c+5] for c in range(0, len(texto), 5)]
+resultado = "-".join(partes)
+print(resultado)

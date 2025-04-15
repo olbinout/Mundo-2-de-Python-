@@ -1,0 +1,17 @@
+numero = int(input('Escolha um número para saber se ele é primo ou não: '))
+numeros_que_dividem = 0
+for c in range (1 , numero + 1):
+    if numero % c == 0:
+        print('\033[32m', end='')
+        numeros_que_dividem = numeros_que_dividem + 1
+
+    else:
+        print('\033[31m', end='')
+    print(f' {c} ', end='')
+
+print(f'\n\033[mO número {numero} foi divísel {numeros_que_dividem} vezes.')
+if numeros_que_dividem == 2:
+    print(f'Por ser divisíviel apenas por 1 e por {numero}, ele é PRIMO.')
+
+else:
+    print(f'Por ser divisível {numeros_que_dividem}, ele NÃO É PRIMO!!!')

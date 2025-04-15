@@ -1,0 +1,11 @@
+sexo = str(input('Qual o seu sexo? [M/F] ')).strip().upper()[0]
+
+while sexo not in 'MF':
+    sexo = str(input('Por favor, informe somento M (Masculino) ou F (Feminino): ')).strip().upper()
+    
+if 'M' in sexo: 
+    print(f'Seu sexo é {sexo} (MASCULINO). Pronto, obrigado!')
+
+elif 'F' in sexo:
+    print(f'Seu sexo é {sexo} (FEMININO). Pronto, obrigada!')
+

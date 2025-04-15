@@ -1,0 +1,15 @@
+#USANDO FOR:
+nmaior = 0
+nmenor = 0
+for c in range (1 , 6):
+    n = int(input('DIGITE UM VALOR: '))
+    if c == 1:
+        nmaior = n
+        nmenor = n
+    else:
+        if n > nmaior:
+            nmaior = n
+
+        if n < nmenor:
+            nmenor = n
+        

@@ -1,0 +1,35 @@
+#DE 1 ATÉ 5:
+for c in range(1, 6):
+    print(c)
+print('FIM')
+
+print( )
+
+#DE 5 ATÉ 1:
+for c in range(5, 0, -1):
+    print(c)
+print('FIM')
+
+print( )
+
+#DO 0 ATÉ O NÚMERO DO USUÁRIO:
+numero = int(input('Escolha um número: '))
+for c in range(0, numero+1,):
+    print(c)
+
+print( )
+
+#DO NÚMERO QUE O USUÁRIO ESCOLHEU ATÉ 0:
+numero = int(input('Escolha outro número: '))
+for c in range(numero, -1, -1):
+    print(c)
+print('Fim do Programa')
+
+print( )
+
+#SOMATÓRIO DE NÚMEROS:
+soma = 0
+for c in range(0,3):
+    usuario_numero = int(input('DIGITE UM NÚMERO: '))
+    soma = soma + usuario_numero 
+print(f'A soma dos números escolhidos foram: {soma}')

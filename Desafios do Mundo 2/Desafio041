@@ -1,0 +1,26 @@
+import datetime
+
+
+print('''Olá, atleta!\nSomos da CONFEDERAÇÃO NACIONAL DE NATAÇÃO e pedimos a sua idade,
+para que possamos atribuir em qual categoria você irá competir.''')
+print('='*40)
+
+ano_de_nascimento = int(input('Em que ano você nasceu? '))
+idade = datetime.date.today().year - ano_de_nascimento
+
+if idade <= 9:
+    print('Sua categoria é a MIRIM!')
+
+elif idade <= 14:
+    print('Sua categoria é a INFANTIL!')
+
+elif idade <= 19:
+    print('Sua categoria é a JUNIOR!')
+
+elif idade == 20:
+    print('Sua categoria é a SÊNIOR!')
+
+elif idade > 20:
+    print('Sua categoria é a MASTER!!!')
+
+print(f'Você tem {idade} anos de idade.')

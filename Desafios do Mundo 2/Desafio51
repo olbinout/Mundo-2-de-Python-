@@ -1,0 +1,9 @@
+termo = int(input('Primeiro termo: '))
+razao = int(input('RAZÃO: '))
+decimo = termo + (11 - 1) * razao
+
+
+for c in range (termo, decimo, razao):
+    print(f'{c}', end= ' -->')
+
+print('ACABOU!')

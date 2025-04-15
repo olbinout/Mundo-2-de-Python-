@@ -1,0 +1,12 @@
+import time
+
+#NO FINAL DE UM RANGE O ÚLTIMO TERMO É IGNORADO.
+#POR ISSO TEM QUE COLOCAR "-1" PRA REPRESENTAR 0.
+contagem = int(input('Contagem regressiva a partir de: '))
+for c in range (contagem, -1, -1):
+    print(c)
+    time.sleep(1)
+    
+print('''   BOOM!
+PÁ!!!    KABOOM!!!
+         POP!''')

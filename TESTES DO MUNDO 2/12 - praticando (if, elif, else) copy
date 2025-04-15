@@ -1,0 +1,19 @@
+nome = str(input('Qual é o seu nome? ')).strip().title()
+print(' ')
+
+if nome == 'otavio' or nome == 'otávio':
+    print("Que nome bonito!")
+
+elif nome == 'Vitória' or nome == 'Pedro' or nome == 'Francisco' or nome == 'Maria' or nome =='Paulo':
+    print('Seu nome é muito popular no Brasil.')
+
+elif nome == 'Michael' or nome == 'Michael Jackson':
+    duvida = str(input('Seus pais são fãs do rei do POP? ')).strip().lower()
+    if duvida == 'sim':
+        print('Sabia que eram!')
+    elif duvida == 'nao' or duvida == 'não':
+        print('É de se questionar o por quê deles terem colocado esse nome em você.')
+else: 
+    print('Seu nome é bem comum, cara.')
+
+print(f'Tenha um bom dia, {nome}.')

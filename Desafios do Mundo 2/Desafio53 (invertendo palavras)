@@ -1,0 +1,19 @@
+texto = str(input('DIGITE QUALQUER PALAVRA: ')).strip().upper()
+palavras = texto.split()
+juntas = ''.join(palavras)
+
+inverso = ''
+for c in range(len(juntas) -1, -1,-1):
+    inverso = inverso + juntas[c]
+
+print(f'Você digitou {texto} e o inverso é {inverso}.')
+print('='*40)
+print(texto)
+print(inverso)
+print('='*40)
+
+if inverso == juntas:
+    print('É um PALÍNDROMO')
+
+else:
+    print('NÃO é um PALÍDROMO')
