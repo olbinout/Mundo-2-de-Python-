@@ -1,0 +1,11 @@
+print('===BEM-VINDO AO ÔNIBUS JARDINENSE===')
+
+local = str(input('Para qual cidade você vai? ')).strip().upper()
+mudar = str(input(f'Ok, você vai para {local} ou quer mudar? ')).strip().lower()
+
+while 'nao' not in mudar:
+    if 'quero mudar' in mudar:
+        local = str(input('Para qual lugar? ')).strip().title()
+        print(f'Ok, vamos deixa-lo até {local}')
+        mudar = str(input('Quer mudar? '))
+
