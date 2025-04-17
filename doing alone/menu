@@ -1,0 +1,66 @@
+import time
+
+print('='*40)
+print('BEM-VINDO AO MERCADINHO DO AROLDO.')
+print('='*40)
+lista_de_proteina = []
+lista_de_bebidas = []
+lista_de_vegetais = []
+lista_de_carbo = []
+opcao = 0
+preco_kg_carne = 30
+print('Escolha os produtos disponívieis e pague no caixa.')
+
+while opcao != 7:
+    print('''Aqui está as OPÇÕES que você pode escolher:
+[1] PROTEÍNAS
+[2] BEBIDAS
+[3] VEGETAIS
+[4] CARBOIDRATOS''')
+    
+    opcao = int(input('DIGITE O NÚMERO CORRESPONDENTE DO QUE VOCÊ DESEJA: '))
+    print('')
+    if opcao == 1:
+        print('Você escolheu as PROTEÍNAS.')
+        print('Agora você pode colocar no carrinho qual o tipo de proteína e a quantidade.')
+
+        print('''[1] CARNE
+[2] OVO
+[3] FRANGO''')
+
+        opcao_proteina = int(input('Qual tipo de proteína você deseja? '))
+        if opcao_proteina == 1:
+            kg_carne = float(input('Quanto de CARNE você quer (kg) ? '))
+            lista_de_proteina.append(kg_carne)
+            print(f'Ok, você escolheu {kg_carne}Kg de CARNE. Custando R${lista_de_proteina[0]*preco_kg_carne}')
+
+        
+        elif opcao_proteina == 2:
+            quant_ovo = int(input('Quantos ovos você quer? '))
+            print(f'OK, você escolheu {quant_ovo} ovos.')
+
+        elif opcao_proteina == 3:
+            kg_frango = float(input('Quanto de FRANGO você queer (kg)? '))
+
+            print(f'OK, você escolheu {kg_frango}Kg de FRANGO.')
+    
+    if opcao == 2:
+        print('VOCÊ ESCOLHEU BEBIDAS.')
+        print('Agora você pode colocar no carrinho qual bebida você quer e a quantidade.')
+
+        print('''[1] TODDYNHO
+[2] H2OH
+[3] COCA DE 2L (ZERO)''')
+        opcao_bebida = int(input('Coloque o número da bebida desejada referente.'))
+
+        if opcao_bebida == 1:
+            print('Você escolheu o famoso TODDYNHO, clássico!')
+            quant_toddynho = int(input('Quantos TODDYNHOS você deseja? '))
+            if quant_toddynho == 1:
+                print(f'Você escolheu {quant_toddynho} TODDYNHO.')
+            else:
+                print(f'Você escolheu {quant_toddynho} TODDYNHOS.')
+
+
+    else:
+        print('terminou)')

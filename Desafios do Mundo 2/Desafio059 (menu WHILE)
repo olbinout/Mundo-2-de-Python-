@@ -3,6 +3,7 @@ import time
 termo1 = float(input('DIGITE UM VALOR: '))
 termo2 = float(input('DIGITE UM SEGUNDO VALOR: '))
 opcao = 0
+
 while opcao != 7:
     print('''Você deseja qual opção?
     [1] ADIÇÃO
