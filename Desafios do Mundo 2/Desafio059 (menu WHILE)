@@ -12,25 +12,25 @@ while opcao != 7:
     [5] SABER QUAL É O MAIOR E QUAL O MENOR
     [6] ESCOLHER NOVOS NÚMEROS
     [7] SAIR DO PROGRAMA''')
-    modo = int(input('Digite qual você desejar: '))
+    opcao = int(input('Digite qual você desejar: '))
 
-    if modo == 1:
+    if opcao == 1:
         adicao = termo1 + termo2
         print(f'{termo1:.1f} + {termo2:.1f} = {adicao:.1f}')
 
-    elif modo == 2:
+    elif opcao == 2:
         sub = termo1 - termo2
         print(f'{termo1} - {termo2} = {sub}')
 
-    elif modo == 3:
+    elif opcao == 3:
         multi = termo1 * termo2
         print(f'{termo1} * {termo2} = {multi}')
 
-    elif modo == 4:
+    elif opcao == 4:
         divisao = termo1 / termo2 
         print(f'{termo1} / {termo2} = {divisao}')
     
-    elif modo == 5:
+    elif opcao == 5:
         if termo1 > termo2:
             print(f'O {termo1} é maior.')
 
@@ -39,19 +39,18 @@ while opcao != 7:
         else:
             print('Os dois valores são iguais.')
 
-    elif modo == 6:
+    elif opcao == 6:
         termo1 = float(input('DIGITE UM VALOR: '))
         termo2 = float(input('DIGITE UM SEGUNDO VALOR: '))
 
-    elif modo == 7:
-        print('Volte sempre que necessitar.')
-        time.sleep(2)
-        print('Desligando')
-        time.sleep(2)
-        print('...')
-        time.sleep(1)
-        print('Desligado.')
-        break
+if opcao == 7:
+    print('Volte sempre que necessitar.')
+    time.sleep(2)
+    print('Desligando')
+    time.sleep(2)
+    print('...')
+    time.sleep(1)
+    print('Desligado.')
 
-    else:
-        print('Opção inválida, tente novamente, por favor.')
+
+  
