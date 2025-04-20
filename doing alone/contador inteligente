@@ -1,0 +1,20 @@
+termo1 = int(input("INICIO: "))
+termo2 = int(input("FIM: "))
+
+if termo1 < termo2:
+    cont = termo1
+    while cont <= termo2:
+        print(f'{cont}', end='')
+        if cont < termo2:
+            print(' ..', end='')
+      
+        cont = cont + 1
+
+elif termo1 > termo2:
+    cont = termo1
+    while cont >= termo2:
+        print(f'{cont}', end='') 
+        if cont > termo2:
+            print(' ..', end='')
+       
+        cont = cont - 1

@@ -1,0 +1,7 @@
+import math
+
+print('VAMOS ENCONTRAR O SENO DE UM ANGULO AGORA!!!')
+angulo = float(input('DIGITE UM ÂNGULO: '))
+conversor = math.sin(math.radians(angulo))
+
+print(f"O Seno de {angulo} é {conversor}")

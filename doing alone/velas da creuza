@@ -1,0 +1,8 @@
+print("Contexto: Creuza tá meio doida e não sabe quantas velas devem ser colocadas no bolo de aniversário dela.")
+print("E iremos ajudar!!!")
+
+ano_atual = int(input('Qual é esse ano de agora? '))
+ano_nascimento = int(input('Eu nasci no ano de: '))
+velas = ano_atual - ano_nascimento
+
+print(f'Então devem ser colocadas {velas} velas no bolo de aniversário da Creuza, PARABÉNS!!!')

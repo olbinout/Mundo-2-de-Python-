@@ -1,0 +1,23 @@
+aluno = 1
+maior_nota = 0
+nome_maior_nota = ''
+
+quant_aluno = int(input('QUANTOS ALUNOS TÊM NA TURMA? '))
+
+while aluno <= quant_aluno:
+    nome = str(input(f'QUAL O NOME DO {aluno}o. ALUNO? '))
+    nota = float(input(f'QUAL A NOTA DO {aluno}o. ALUNO? '))
+
+    if aluno == 1:
+        maior_nota = nota
+        nome_maior_nota = nome  
+
+    if nota > maior_nota:
+        maior_nota = nota
+        nome_maior_nota = nome
+
+    aluno = aluno + 1
+
+
+print(f'O nome do aluno com a maior nota é {nome_maior_nota}')
+print(f'E sua nota foi de {maior_nota}')
