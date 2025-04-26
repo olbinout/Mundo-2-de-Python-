@@ -1,0 +1,3 @@
+termo1 = float(input('DIGITE UM NÚMERO PARA MOSTRAR SEU QUADRADO: '))
+quadrado = termo1**2
+print(f'O quadrado do número {termo1} é {quadrado}.')

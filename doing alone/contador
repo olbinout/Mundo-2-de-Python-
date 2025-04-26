@@ -1,0 +1,20 @@
+contador = 1
+
+while contador <= 10:
+    print(f'[{contador}] ', end='')
+
+    contador = contador + 1
+
+print()
+
+numero = int(input("ESCOLHA um número para ver sua tabuada: "))
+
+outro_contador = 1
+while outro_contador <= 10:
+    print(f'{numero} x {outro_contador} = {numero * outro_contador}')
+    
+    outro_contador = outro_contador + 1 
+
+
+
+    
