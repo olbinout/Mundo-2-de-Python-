@@ -9,3 +9,4 @@ while 'nao' not in mudar:
         print(f'Ok, vamos deixa-lo até {local}')
         mudar = str(input('Quer mudar? '))
 
+print(f'Estamos indo para {local}')
